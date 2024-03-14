@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "suzitest",
+	"version": "${version}",
+	"name": "Suzi Mod",
+	"description": "Just a lesson test",
+	"authors": [
+		"SuZIForD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/suzitest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.suziford.suzitest.SuziMod"
+		],
+		"client": [
+			"net.suziford.suzitest.SuziModClient"
+		],
+		"fabric-datagen": [
+			"net.suziford.suzitest.SuziModDataGenerator"
+		]
+	},
+	"mixins": [
+		"suzitest.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
